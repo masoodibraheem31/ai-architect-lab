@@ -13,3 +13,4 @@ Notes:
 - Role names changed: old "Azure AI User" is now "Foundry User" (checked with az role definition list).
 - Budget has no test button on free trial. Proved the email with an Activity Log alert + action group.
 - Guard layers against cost: TPM cap per deployment, budget alert, free-trial spending limit, no keys in code.
+- Turned off API keys on the Foundry resource (disableLocalAuth=true). Listing keys now fails; keyless call still works. This is the hard fix for leaked keys.
